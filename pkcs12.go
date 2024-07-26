@@ -467,7 +467,7 @@ func DecodeChain(pfxData []byte, password string) (privateKey interface{}, certi
 		return nil, nil, nil, errors.New("pkcs12: certificate missing")
 	}
 	if privateKey == nil {
-		return nil, nil, nil, errors.New("pkcs12: private key missing")
+		return nil, nil, nil, nil
 	}
 
 	return
